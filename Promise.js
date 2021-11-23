@@ -83,6 +83,7 @@ const AsyncConsumerTryCatch = async () => {
 // AsyncConsumerTryCatch();
 
 // Using fetch()
+// The fetch method returns a promise. So we can call the .then handler method on it
 fetch('/api/user.json')
 .then(response => {
     return response.json();
