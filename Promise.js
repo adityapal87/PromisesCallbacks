@@ -82,6 +82,15 @@ const AsyncConsumerTryCatch = async () => {
 
 // AsyncConsumerTryCatch();
 
+// Using fetch()
+fetch('/api/user.json')
+.then(response => {
+    return response.json();
+})
+.then(json => {
+    console.log(json); // {"name": "tapas", "blog": "freeCodeCamp"}
+});
+
 /*
 const isMeeting=true;
 const details = () => {
@@ -119,3 +128,4 @@ const promise2 = new Promise(( resolve, reject )=>{
 Promise.all([getDetails, promise2]).then(res => console.log(res));
 
 // Promise.race([getDetails, promise2]).then(res => console.log(res));
+
