@@ -1,5 +1,8 @@
 // Dated - 23rd Nov, 2021
 
+// Link to follow -> https://www.youtube.com/watch?v=F8xANXY0kaU
+// Article to follow -> https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/
+
 // Promises are used to handle async result.
 /*
 How to Handle Multiple Promises
@@ -14,9 +17,18 @@ Promise.resolve
 Promise.reject
 */
 
+/*
+NOTE:
+A Promise executor should call only one resolve or one reject. Once one state is changed (pending => fulfilled or pending => rejected), 
+that's all. Any further calls to resolve or reject will be ignored.
 
-// Link to follow -> https://www.youtube.com/watch?v=F8xANXY0kaU
-// Article to follow -> https://www.freecodecamp.org/news/javascript-promise-tutorial-how-to-resolve-or-reject-promises-in-js/
+let promise = new Promise(function(resolve, reject) {
+  resolve("I am surely going to get resolved!");
+
+  reject(new Error('Will this be ignored?')); // ignored
+  resolve("Ignored?"); // ignored
+});
+*/
 
 const isMeeting=true;
 const getDetails = new Promise((resolve, reject) => {
