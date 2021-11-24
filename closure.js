@@ -44,3 +44,4 @@ function z() {
 z(); // prints 100 10
 
 // In the above example, y forms CLOSURE with x and z.
+
