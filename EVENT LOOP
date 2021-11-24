@@ -1,0 +1,17 @@
+// Video to be followed -> https://www.youtube.com/watch?v=8zKuNo4ay8E
+
+1. EVENT LOOP acts as a gatekeeper whose task is to check CALLSTACK continuously whether CALLSTACK is clear.
+   If it finds CALLSTACK is clear, then it pushes the callback functions present in CALLBACK QUEUE to CALLSTACK.
+
+2. MICROTASK QUEUE contains callbacks of PROMISES and MUTATION OBSERVER. Other callbacks are stored in CALLSTACK QUEUE.
+
+3. CALLSTACK is portion of JS ENGINE.
+
+4. GEC(Global Execution Context) is created for execution of JS codes. After that, console log commands are executed.
+
+5. WEB APIs contains -
+   a. DOM APIs (document.getElementById) kinds of things.
+   b. Local Storage
+   c. fetch()
+   d. console
+   e. setTimeOut // it's a part of WEB APIs but not of JS.
